@@ -1,0 +1,12 @@
+immutable_var=1,"кот", True
+print(immutable_var)
+# immutable_var[0]=кошка НЕ ПОЛУЧИТСЯ, так как содержимое кортежа не изменно. менять можно только содержимое списка
+mutable_list=[1,"кот", True]
+mutable_list[1]="кошка"
+print(mutable_list)
+mutable_list.append("собака") #добвить еще канарейку не дает. через extend!!!
+print(mutable_list)
+mutable_list.extend(["канарейка","слон"])
+print(mutable_list)
+mutable_list.remove(1)
+print(mutable_list)
